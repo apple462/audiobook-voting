@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 from models import db, Audiobook, User
-from flask_bcrypt import Bcrypt
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
 api_bp = Blueprint('api', __name__)
@@ -62,7 +61,7 @@ def vote(book_id):
     audiobook = Audiobook.query.get_or_404(book_id)
     audiobook.votes += 1
     user.has_voted = True
-    user.voted_audiobook_id = book_id  # Save the voted audiobook ID
+    user.voted_audiobook_id = book_id
 
     db.session.commit()
     return jsonify({"msg": f"Vote cast successfully for '{audiobook.title}'!", "vote_count": audiobook.votes}), 200

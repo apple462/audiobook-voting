@@ -1,7 +1,4 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import Bcrypt
-from flask_jwt_extended import JWTManager
 from config import Config
 from models import db, bcrypt, jwt
 from flask_cors import CORS
