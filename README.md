@@ -1,4 +1,4 @@
-### audiobook-voting
+# audiobook-voting
 Audiobook Voting Application
 
 To run the project locally, ensure that you have node and python installed on your system.
@@ -24,7 +24,8 @@ To run the project locally, ensure that you have node and python installed on yo
 14. Your frontend is now running on localhost:3000
 
 
-# Note: When the new db instance will be created, no audiobook entries will be present. Either use a tool like DBBrowser to add some audiobook entries, or use postman to add Audiobooks using the following curl:
+### Note:
+When the new db instance will be created, no audiobook entries will be present. Either use a tool like DBBrowser to add some audiobook entries, or use postman to add Audiobooks using the following curl:
 curl --location '127.0.0.1:5000/audiobooks' \
 --header 'Content-Type: application/json' \
 --data '{
