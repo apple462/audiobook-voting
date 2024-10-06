@@ -4,7 +4,7 @@ Audiobook Voting Application
 To run the project locally, ensure that you have node and python installed on your system.
 
 Project Structure:
-1. Backend is managed in the 'app' folder.
+1. Backend is managed in the 'api' folder.
 2. Frontend is managed in the 'app' folder.
 
 To run the project locally:
